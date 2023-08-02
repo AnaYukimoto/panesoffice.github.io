@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.png">
+    <title>Cupons</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/cupons.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/logo.png" width="40px" height="40px" alt="" class="d-inline-block align-top">
+        </a>
+
+        <a class="navbar-brand" href="index.html" style="font-size: 23px;">Pane Soffice</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+            aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="conteudoNavbarSuportado">
+            <ul class="navbar-nav">
+                <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                        aria-haspopup="true" aria-expanded="false"> Opções de Cardápio</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="pgcafemanha.html">Café da Manhã</a>
+                        <a class="dropdown-item" href="pgbolos.html">Bolos</a>
+                        <a class="dropdown-item" href="pgbebidas.html">Bebidas</a>
+                        <a class="dropdown-item" href="pgdoces.html">Doces</a>
+                        <a class="dropdown-item" href="pgsalgados.html">Salgados</a>
+                    </div>
+                </div>
+                <li class="nav-item">
+                    <a class="nav-link" href="pgcupons.html">Cupons</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#sobre">Sobre Nós</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pgunidades.html">Unidades</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pgcurriculo.html">Trabalhe Conosco</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pgfaleconosco.html">Fale Conosco</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="col-lg-15 m-b-s"></div>
+            <h2 class="titulo2">Aqui encontra os melhores Combos para você e sua família!</h2>
+            <br>
+            <form method="get" action="" name="cupom" id="cupom">
+                <div class="card-columns">
+                    <div class="card">
+                        <img class="card-img-top" src="img/cardapio/combos/combo01.jpg" alt="Imagem de capa do card" height="250px">
+                        <div class="card-body">
+                            <h5 class="card-title">Smash Burguer</h5>
+                            <label for="valor">Valor com Desconto em R$</label>
+                            <input type="number" name="valor1" id="valor1" value="26.90" readonly>
+                            <input type="button" class='two' data-cupom="A21-DLA-MNA" value="EU QUERO" onclick="pagar(this)">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="img/cardapio/combos/combo03.jpg" alt="Imagem de capa do card" height="250px">
+                        <div class="card-body">
+                            <h5 class="card-title">Bronwie com Sorvete</h5>
+                            <label for="valor">Valor com Desconto em R$</label>
+                            <input type="number" name="valor2" id="valor2" value="15.00" readonly>
+                            <input type="button" class='two' data-cupom="B32-DLB-MNB"value="EU QUERO" onclick="pagar(this)">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="img/cardapio/combos/combo05.jpg" alt="Imagem de capa do card" height="250px">
+                        <div class="card-body">
+                            <h5 class="card-title">Brunch Americano</h5>
+                            <label for="valor">Valor com Desconto em R$</label>
+                            <input type="number" name="valor3" id="valor3" value="59.90" readonly>
+                            <input type="button" class='two' data-cupom="C34-DLC-MNC" value="EU QUERO" onclick="pagar(this)">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="img/cardapio/combos/combo06.webp" alt="Imagem de capa do card" height="250px">
+                        <div class="card-body">
+                            <h5 class="card-title">Especial Café da Manhã</h5>
+                            <label for="valor">Valor com Desconto em R$</label>
+                            <input type="number" name="valor4" id="valor4" value="49.90" readonly>
+                            <input type="button" class='two' data-cupom="D54-DLD-MND" value="EU QUERO" onclick="pagar(this)">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="img/cardapio/combos/combo02.png" alt="Imagem de capa do card" height="250px">
+                        <div class="card-body">
+                            <h5 class="card-title">Um Café com um Croissant</h5>
+                            <label for="valor">Valor com Desconto em R$</label>
+                            <input type="number" name="valor5" id="valor5" value="24.50" readonly>
+                            <input type="button" class='two' data-cupom="E65-DLE-MNE" value="EU QUERO" onclick="pagar(this)">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="img/cardapio/combos/combo07.jpg" alt="Imagem de capa do card" height="250px">
+                        <div class="card-body">
+                            <h5 class="card-title">Cafe da Manhã Simples</h5>
+                            <label for="valor">Valor com Desconto em R$</label>
+                            <input type="number" name="valor6" id="valor6" value="9.90" readonly>
+                            <input type="button" class='two' data-cupom="F76-DLF-MNF" value="EU QUERO" onclick="pagar(this)">
+                        </div>
+                    </div>
+                </div>
+            </form>
+    </div>
+
+    <div id="retorno"></div>
+    <script src="js/cupom.js"></script>
+
+    <footer>
+        <img src="img/icones/whats.png" class="icone">
+        <img src="img/icones/face.png" class="icone">
+        <img src="img/icones/insta.png" class="icone">
+        <img src="img/icones/twiter.png" class="icone">
+    </footer>
+
+</body>
+</html>

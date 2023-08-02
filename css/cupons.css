@@ -1,0 +1,108 @@
+.titulo2 {
+  text-align: center !important;
+  color: white !important;
+}
+
+input[type="number"] {
+  border: none;
+  background-color: #c5707000;
+  width: 80px;
+  font-weight: 600;
+
+}
+
+.two {
+  border: none;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 20px 50px 20px 70px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  position: relative;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  width: 100%;
+  -webkit-transition: background-position .7s, box-shadow .4s;
+  transition: background-position .7s, box-shadow .4s;
+  background-size: 110%;
+  margin-top: 10%;
+}
+
+.two:hover {
+  background-position: 0% 30%;
+}
+
+.two:hover:after {
+  right: -40px;
+  -webkit-transition: right .4s, -webkit-transform 30s .2s linear;
+  transition: right .4s, -webkit-transform 30s .2s linear;
+  transition: right .4s, transform 30s .2s linear;
+  transition: right .4s, transform 30s .2s linear, -webkit-transform 30s .2s linear;
+}
+
+.two:before {
+  font-family: FontAwesome;
+  display: block;
+  position: absolute;
+}
+
+.two:before {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  font-size: 30px;
+  left: 25px;
+  top: 19px;
+}
+
+.two:after {
+  -webkit-transition: right .4s, -webkit-transform .2s;
+  transition: right .4s, -webkit-transform .2s;
+  transition: right .4s, transform .2s;
+  transition: right .4s, transform .2s, -webkit-transform .2s;
+  font-size: 100px;
+  opacity: .3;
+  right: -120px;
+  top: -17px;
+}
+
+.two {
+  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset, 0px 0px 10px 0px #E48A3C;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#E48A3C), to(rgba(222, 135, 61, 0.24))), url("../img/fundoBtn01.jpg");
+  background-image: linear-gradient(to bottom, #E48A3C, rgba(222, 135, 61, 0.24)), url("../img/fundoBtn01.jpg");
+}
+
+.two:hover {
+  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset, 0px 0px 30px 0px #E48A3C;
+}
+
+.two:hover:after {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.two:hover:before {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+/* Estilo do js*/
+
+.custom-swal-title {
+  color: #ff6600;
+  font-size: 30px;
+  padding: 5% 0 5% 0;
+}
+
+.custom-swal-message {
+  font-size: 15px;
+}
+
+.custom-swal-confirm-button {
+  background-color: #ff6600 !important;
+  border: none !important;
+}
+
+.custom-swal-confirm-button:hover {
+  background-color: #e55e00 !important; 
+}

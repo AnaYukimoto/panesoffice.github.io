@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/logo.png">
+  <title>Entrega</title>
+  <link rel="stylesheet" href="css/pedido.css">
+  <link rel="stylesheet" href="css/estilo.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light ">
+    <a class="navbar-brand" href="index.html">
+      <img src="img/logo.png" width="40px" height="40px" alt="" class="d-inline-block align-top">
+    </a>
+
+    <a class="navbar-brand" href="index.html" style="font-size: 23px;">Pane Soffice</a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+      aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="conteudoNavbarSuportado">
+      <ul class="navbar-nav">
+        <div class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+            aria-expanded="false"> Opções de Cardápio</a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="pgcafemanha.html">Café da Manhã</a>
+            <a class="dropdown-item" href="pgbolos.html">Bolos</a>
+            <a class="dropdown-item" href="pgbebidas.html">Bebidas</a>
+            <a class="dropdown-item" href="pgdoces.html">Doces</a>
+            <a class="dropdown-item" href="pgsalgados.html">Salgados</a>
+          </div>
+        </div>
+        <li class="nav-item">
+          <a class="nav-link" href="pgcupons.html">Cupons</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#sobre">Sobre Nós</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="pgunidades.html">Unidades</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="pgcurriculo.html">Trabalhe Conosco</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="pgfaleconosco.html">Fale Conosco</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <form method="get" id="formPedido" name="formPedido" action="pedido.php">
+      <div class="login-wrap">
+        <div class="login-html">
+          <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Informações
+            de entrega</label>
+          <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab"></label>
+          <div class="login-form">
+            <div class="sign-in-htm">
+              <div class="group">
+                <label for="nome" class="label">Nome</label>
+                <input id="nome" type="text" class="input" name="nome" required>
+        
+                <label for="tel" class="label">Telefone</label>
+                <input id="tel" type="text" class="input" name="tel" data-type="telefone" required>
+           
+                <label for="cepEnd" class="label">CEP</label>
+                <input id="cepEnd" type="text" class="input" name="cepEnd" required>
+        
+                <label for="end" class="label">Endereço</label>
+                <input id="end" type="text" class="input" name="end" required>
+        
+                <label for="numeroEnd" class="label">Número da Residência</label>
+                <input id="numeroEnd" type="text" class="input" name="numeroEnd" required>
+            
+                <label for="compEnd" class="label">Complemento</label>
+                <input id="compEnd" type="text" class="input" name="compEnd" required>
+              
+                <label for="pass" class="label">FORMA DE PAGAMENTO</label>
+                <select class="input" id="formPag">
+                  <option>PIX</option>
+                  <option>DINHEIRO</option>
+                  <option>CARTÃO DE CRÉDITO</option>
+                  <option>CARTÃO DE DÉBITO</option>
+                </select>
+                <p style="text-align: right;">Pagamento feito na Entrega</p>
+              
+                <input type="button" class="button" value="Enviar" onclick="pedido()">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <footer>
+    <img src="img/icones/whats.png" class="icone">
+    <img src="img/icones/face.png" class="icone">
+    <img src="img/icones/insta.png" class="icone">
+    <img src="img/icones/twiter.png" class="icone">
+  </footer>
+
+  <div id="retorno"></div>
+  <script src="js/pedido.js"></script>
+  
+</body>
+</html>
