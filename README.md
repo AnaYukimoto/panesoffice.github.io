@@ -15,6 +15,7 @@ O Panés Office visa proporcionar uma experiência de compra online conveniente 
 ## Tecnologias Utilizadas
 
 O projeto é desenvolvido utilizando as seguintes tecnologias:
+
 ![PHP](https://img.icons8.com/color/48/000000/php.png) ![HTML](https://img.icons8.com/color/48/000000/html-5.png) ![CSS](https://img.icons8.com/color/48/000000/css3.png) 
 
 ## Imagem do Projeto
