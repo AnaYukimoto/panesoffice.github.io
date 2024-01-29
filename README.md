@@ -16,9 +16,9 @@ O Panés Office visa proporcionar uma experiência de compra online conveniente 
 
 O projeto é desenvolvido utilizando as seguintes tecnologias:
 
-- **PHP:** Linguagem de programação server-side para a lógica de negócios e manipulação de dados.
-- **HTML:** Linguagem de marcação para estruturar o conteúdo das páginas web.
-- **CSS:** Utilizado para estilização e design das páginas do site.
+- PHP: ![PHP](https://img.icons8.com/color/48/000000/php.png) 
+- HTML: ![HTML](https://img.icons8.com/color/48/000000/html-5.png) 
+- CSS: ![CSS](https://img.icons8.com/color/48/000000/css3.png) 
 
 ## Imagem do Projeto
 
