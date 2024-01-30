@@ -27,3 +27,5 @@ O projeto é desenvolvido utilizando as seguintes tecnologias:
 Você pode acessar o site do projeto [aqui](https://anayukimoto.github.io/panesoffice.github.io/).
 
 
+---
+Ana Yukimoto
